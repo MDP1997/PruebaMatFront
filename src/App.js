@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 import Home from './components/general/Home';
 import Login from './components/general/Login';
-import Asignaturas from './components/asignaturas/Asignaturas';
+import Profesores from './components/profesores/Profesores';
 import Calificaciones from './components/calificaciones/Calificaciones';
 import Estudiantes from './components/estudiantes/Estudiantes';
-import Profesores from './components/profesores/Profesores';
+import Materias from './components/materias/Materias';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link to="/asignaturas" className="nav-item nav-link" >Asignaturas</Link>
+              <Link to="/materias" className="nav-item nav-link" >Materias</Link>
               <Link to="/calificaciones" className="nav-item nav-link" >Calificaciones</Link>
               <Link to="/estudiantes" className="nav-item nav-link" >Estudiantes</Link>
               <Link to="/profesores" className="nav-item nav-link" >Profesores</Link>
@@ -34,7 +34,7 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Home/>} ></Route>
-          <Route path="/asignaturas" element={<Asignaturas/>} ></Route>
+          <Route path="/materias" element={<Materias/>} ></Route>
           <Route path="/calificaciones" element={<Calificaciones/>} ></Route>
           <Route path="/estudiantes" element={<Estudiantes/>} ></Route>
           <Route path="/profesores" element={<Profesores/>} ></Route>

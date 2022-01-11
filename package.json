@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:1600",
+  "proxy": "https://api-mdp1997.cloud.okteto.net",
   "eslintConfig": {
     "extends": [
       "react-app",

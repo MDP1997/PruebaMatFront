@@ -17,10 +17,10 @@ spec:
                 name: frontend
                 port:
                   number: 80
-          - path: /api
+          - path: /apimaterias
             pathType: Prefix
             backend:
               service:
-                name: api
+                name: apimaterias
                 port:
                   number: 3000
